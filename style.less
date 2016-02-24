@@ -1,0 +1,96 @@
+@import 'theme';
+
+//Mixins
+.MainBackgroundColor {
+	background-color: #11EF9A;
+}
+
+.SolidBorder {
+	border-style: solid;
+}
+
+.Size {
+	width: 175px;
+	height: 175px;
+}
+
+.Display {
+	display: inline-block;
+}
+
+//Math
+.BorderColor {
+	border-color: #11EF9A - #222 - #222;
+}
+
+//Parametric Mixin
+.RoundedCorners(@radius: 0) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.circle {
+  .RoundedCorners(50%);
+  .MainBackgroundColor;
+  .Size;
+  .BorderColor;
+  .Display;
+   border-style: dashed;
+}
+
+.square {
+  .RoundedCorners;
+  .MainBackgroundColor;
+  .SolidBorder;
+  .Size;
+  .BorderColor;
+  .Display;
+}
+
+.purple:hover {
+	background-color: #6D23DB;
+}
+
+.blue:hover {
+	background-color: #2623DB;
+}
+.orange:hover {
+	background-color: #DB8B23;
+}
+.yellow:hover {
+	background-color: #FCF56F;
+}
+
+#pink {
+	color: @winningColor;
+}
+
+h1 {
+	text-align: center;
+	font-family: Arial;
+}
+
+#winner {
+	color: @winningColor;
+	position: relative;
+	top: -163px;
+
+	&:hover {
+		background-color: @winningColor;
+	}
+} 
+
+#found {
+	opacity: 0;
+}
+
+#winner:hover #found {
+	opacity: 1;
+	color: black;
+	text-align: center;
+	font-family: Arial;
+	position: relative;
+	top: 70px;
+	left: 40px;
+}

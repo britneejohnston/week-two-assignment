@@ -1,0 +1,77 @@
+.MainBackgroundColor {
+  background-color: #11EF9A;
+}
+.SolidBorder {
+  border-style: solid;
+}
+.Size {
+  width: 175px;
+  height: 175px;
+}
+.Display {
+  display: inline-block;
+}
+.BorderColor {
+  border-color: #00ab56;
+}
+.circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #11EF9A;
+  width: 175px;
+  height: 175px;
+  border-color: #00ab56;
+  display: inline-block;
+  border-style: dashed;
+}
+.square {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  background-color: #11EF9A;
+  border-style: solid;
+  width: 175px;
+  height: 175px;
+  border-color: #00ab56;
+  display: inline-block;
+}
+.purple:hover {
+  background-color: #6D23DB;
+}
+.blue:hover {
+  background-color: #2623DB;
+}
+.orange:hover {
+  background-color: #DB8B23;
+}
+.yellow:hover {
+  background-color: #FCF56F;
+}
+#pink {
+  color: #DB17D8;
+}
+h1 {
+  text-align: center;
+  font-family: Arial;
+}
+#winner {
+  color: #DB17D8;
+  position: relative;
+  top: -163px;
+}
+#winner:hover {
+  background-color: #DB17D8;
+}
+#found {
+  opacity: 0;
+}
+#winner:hover #found {
+  opacity: 1;
+  color: black;
+  text-align: center;
+  font-family: Arial;
+  position: relative;
+  top: 70px;
+  left: 40px;
+}
